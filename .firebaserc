@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "bdclientresa": {
+      "hosting": {
+        "app-client": [
+          "bdclientresa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "bdclientresa"
+  }
+}
