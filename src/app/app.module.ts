@@ -7,7 +7,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { AngularFireModule } from '@angular/fire/compat';
+
  import { FirestoreModule } from "@angular/fire/firestore"; 
 import {firebaseConfig} from './environment/environment';
 
@@ -24,6 +24,9 @@ import { provideFirebaseApp } from '@angular/fire/app';
 import { initializeApp } from 'firebase/app';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { HomeComponent } from './home/home.component';
+import { AngularFireModule } from '@angular/fire/compat';
+// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 
 
 @NgModule({
@@ -32,6 +35,7 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     RegisterComponent,
     HomeComponent,
+    
     
   ],
   imports: [
@@ -56,7 +60,12 @@ import { HomeComponent } from './home/home.component';
     MatSelectModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatButtonModule
+    MatButtonModule,
+    // AngularFirestoreModule,
+    // AngularFireModule
+    
+
+    
     
     
   ],
